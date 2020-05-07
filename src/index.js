@@ -10,6 +10,10 @@ const taskRouter = require('./routers/task')
 const app = express()
 const port = process.env.PORT || 3000
 
+// app.use((req, res, next) => {
+//     return res.status(503).send('Site is under maintainence')
+// })
+
 app.use(express.json())
 app.use(userRouter)
 app.use(taskRouter)
@@ -19,11 +23,11 @@ app.listen(port, () => {
 })
 
 
-const jwt = require('jsonwebtoken')
+// const jwt = require('jsonwebtoken')
 
-const func = async () => {
-    const token = jwt.sign({ _id: 'abcd' }, 'ashjdoasjdoi')
-    console.log(token)
-}
+// const func = async () => {
+//     const token = jwt.sign({ _id: 'abcd' }, 'ashjdoasjdoi')
+//     console.log(token)
+// }
 
-func()
+// func()
