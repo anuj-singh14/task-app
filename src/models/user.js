@@ -41,7 +41,8 @@ const userSchema = new mongoose.Schema({
             }
         }
     },
-    tokens: [{
+    tokens: [{  //storing tokens to facilitate logging in different devices(mobile, laptop, etc.), 
+                //and when a user logs out from one device, he will still be logged in in other devices
         token: {
             type: String,
             required: true

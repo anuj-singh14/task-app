@@ -10,6 +10,8 @@ const taskRouter = require('./routers/task')
 const app = express()
 const port = process.env.PORT || 3000
 
+// Database cmd: /Users/anuja/mongodb/bin/mongod.exe --dbpath=/Users/anuja/mongodb-data
+
 // app.use((req, res, next) => {
 //     return res.status(503).send('Site is under maintainence')
 // })
